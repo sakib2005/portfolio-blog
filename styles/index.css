@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+.nav-f {
+  font-family: "Leckerli One", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #e75d48;
+  --color-secondary: #00a8cc;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: rgba(255, 193, 7, 0.6);
+  --color-footer: #a5a58d;
+  --color-border: #ccc;
+  --border-radius: 30px;
+  --font-color: #20233c;
+  --font: Heebo, Arial, Helvetica, sans-serif;
+  --color-body-2: #f7ede2;
+}
+body {
+  font-family: Heebo, Arial, Helvetica, sans-serif;
+
+  /* background: #f7ff00;
+  background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
+  background: linear-gradient(to right, #db36a4, #f7ff00); */
+  background-color: #fdffb6;
+  color: #21243d;
+}
+
+.hero {
+  height: 720px;
+  width: auto;
+}
+.card-review {
+  min-height: 150px;
+  max-height: 250px;
+
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.title-cards-1 {
+  text-align: center;
+  font-weight: bold;
+}
+.text-shadow {
+  color: white;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.t-c {
+  color: var(--font-color);
+}
+.text-title {
+  color: #3a0ca3;
+}
+.red {
+  background: #ff3400;
+}
+.pink {
+  background-color: #fdffb6;
+}
+.recent-posts {
+  background: #caf0f8;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.tran-all {
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.navbar {
+  font-size: 1.6rem;
+  font-family: Heebo;
+}
+
+.nav-li {
+  color: var(--font-color);
+}
+
+.nav-li:hover {
+  color: #ff3400;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    margin-left: 2.5rem;
+  }
+}
+.f-font-1 {
+  font-weight: normal;
+  color: var(--font-color);
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    margin-left: 3rem;
+  }
+
+  .hero-img {
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .f-font-1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 624px) {
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    margin-left: 2.5rem;
+  }
+  .f-font-1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero {
+    margin-left: 2rem;
+  }
+  .f-font-1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .hero {
+    margin-left: 1.5rem;
+  }
+}
+
+.img-gatsby-svg {
+  max-width: 270px;
+}
+.footer {
+  background: hsl(0, 0%, 40%);
+  height: 100px;
+}
+.bi {
+  fill: #21243d;
+}
+.bi-facebook:hover {
+  fill: blue;
+}
+.bi-twitter:hover {
+  fill: #1da1f2;
+}
+.bi-instagram:hover {
+  fill: #ca2f7e;
+}
+.bi-linkedin:hover {
+  fill: #0077b5;
+}
+
+@media screen and (max-width: 345px) {
+  .blog-card {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .contact-title {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+  .contact-title {
+    font-size: 9rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .contact-title {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 800px) {
+  .contact-title {
+    font-size: 7rem;
+  }
+}
+
+.contact-logo {
+  width: 2rem;
+}
+
+/*  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------Button----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.Anime-btn {
+  color: var(--color-headings);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .Anime-btn {
+    margin: 0 1em 2em;
+  }
+}
+.Anime-btn:hover {
+  text-decoration: none;
+}
+
+.Anime-btn:hover {
+  text-decoration: none;
+}
+
+.Anime-btn-1 {
+  background: var(--color-primary);
+  font-weight: 100;
+}
+.Anime-btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.Anime-btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.Anime-btn-1:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.Anime-btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.Anime-btn-2 {
+  letter-spacing: 0;
+}
+
+.Anime-btn-2:hover,
+.Anime-btn-2:active {
+  letter-spacing: 5px;
+}
+
+.Anime-btn-2:after,
+.Anime-btn-2:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.Anime-btn-2:hover:after,
+.Anime-btn-2:hover:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.Anime-btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.Anime-btn-3 {
+  background: #e3403a;
+  border: 1px solid #da251f;
+  box-shadow: 0px 2px 0 #d6251f, 2px 4px 6px #e02a24;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+
+.Anime-btn-3:hover {
+  background: #e02c26;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #ec817d;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #c2211c;
+  transition: all 250ms linear;
+}
+
+.Anime-btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+.Anime-btn-4 span {
+  z-index: 20;
+}
+.Anime-btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.Anime-btn-4:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.Anime-btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.Anime-btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------Button-End------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
