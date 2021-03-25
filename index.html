@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/hover-min.css" />
-    <title>Blog Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Abdullah al Sakib - Web Developer</title>
   </head>
   <body>
     <!-- Navbar-start -->
@@ -68,7 +69,7 @@
         <div style="height: 5rem" class="col-12"></div>
       </div>
       <div class="row t-c mt-5">
-        <div class="col-lg-5 mt-lg-5">
+        <div class="col-lg-5 mt-lg-5" data-aos="fade-right">
           <div class="row">
             <div class="row">
               <div style="height: 3rem" class="row"></div>
@@ -92,7 +93,7 @@
           </div>
         </div>
         <div class="col-lg-2"></div>
-        <div class="col-lg-5 mx-0">
+        <div class="col-lg-5 mx-0" data-aos="fade-left">
           <img
             class="img-fluid hero-img"
             src="./img/undraw_developer_activity_bv83.svg"
@@ -108,16 +109,19 @@
 
     <div
       class="container-fluid title-cards-1 display-4 text-uppercase text-title mt-5"
+      data-aos="fade-up-right"
     >
       <span class="text-shadow">Recent posts</span>
     </div>
     <div
       class="container-fluid recent-posts d-flex justify-content-evenly align-items-md-center p-5 p-sm-3"
+      data-aos="fade-up-left"
     >
       <div class="row">
         <div
           class="card col-md-3 hvr-grow my-5 mx-sm-4 card-review"
           style="width: 25rem"
+          data-aos="flip-left"
         >
           <div class="card-body">
             <h5 class="card-title h2">
@@ -140,6 +144,7 @@
         <div
           class="card col-md-3 hvr-grow my-5 mx-sm-4 card-review"
           style="width: 25rem"
+          data-aos="flip-left"
         >
           <div class="card-body">
             <h5 class="card-title h2">
@@ -161,11 +166,10 @@
         <div
           class="card col-md-3 hvr-grow my-5 mx-sm-4 card-review d-none d-lg-block"
           style="width: 25rem"
+          data-aos="flip-left"
         >
           <div class="card-body">
-            <h5 class="card-title h2">
-              Use Django the best web-application development framework
-            </h5>
+            <h5 class="card-title h2">Use Django for the first time</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               <span class="me-lg-2">Card subtitle</span> ||
               <span class="ms-lg-2">march 2020</span>
@@ -182,6 +186,7 @@
         <div
           class="card col-md-3 hvr-grow my-5 mx-sm-4 card-review d-none d-xl-block"
           style="width: 25rem"
+          data-aos="flip-left"
         >
           <div class="card-body">
             <h5 class="card-title h2">React with Django</h5>
@@ -191,7 +196,8 @@
             </h6>
             <p class="card-text f-font-1">
               Some quick example text to build on the card title and make up the
-              bulk of the card's content.bulk of the card's content.
+              bulk of the card's content.bulk of the card's content. Lorem
+              ipsum, dolor sit , optio!
             </p>
             <a href="#" class="card-link hvr-grow btn btn-primary btn-sm"
               >See more</a
@@ -203,7 +209,7 @@
 
     <!-- Work -->
 
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="container mt-2">
         <div class="my-5 mx-auto container hvr-grow">
           <div
@@ -396,10 +402,28 @@
 
     <script src="./script/bootstrap.bundle.min.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 3000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+    <!-- AOS -->
   </body>
 </html>
